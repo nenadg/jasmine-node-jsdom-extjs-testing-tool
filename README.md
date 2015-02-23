@@ -1,5 +1,5 @@
 # jasmine-node-jsdom-extjs-testing-tool
-Functional Ext.JS testing automation tool using jasmine-node and jsdom
+Functional front-end Ext.JS testing automation tool using jasmine-node and jsdom
 
 Installation will get needed libraries for you in case you already have installed node package module (https://www.npmjs.org/).
 
@@ -9,11 +9,11 @@ Use Ext.JS package and follow Sencha cmd enterprise app workflow rules to get yo
 
 ## Included tests and environment
 In this test scenario, I've built basic Ext.JS app as it comes out of the box. Added just few lines of code to test things like: 
-	 - Click on this button, dialog opens, click 'Yes' to modify some namespace-global variable.
-	 - Is there a 'tabpanel' available 
-	 - etc.
+- Click on this button, dialog opens, click 'Yes' to modify some namespace-global variable.
+- Is there a 'tabpanel' available 
+- etc.
 
-I've built an app and set up Apache to serve that conent. Nothing special.
+I've built an app and set up Apache to serve that content. Nothing special.
 
 ## Installation
     $ npm install
