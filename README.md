@@ -97,6 +97,15 @@ $ npm install
 ```sh
 $ npm start
 ```
+or
+```sh
+$ ./run.sh
+```
+or
+```sh
+$ workspace/MyTestApp/sencha app build -c [development, production, testing]
+```
+
 ## The way it works
 Code is well commented so I won't bother explaining to much, the process is basic:
 
