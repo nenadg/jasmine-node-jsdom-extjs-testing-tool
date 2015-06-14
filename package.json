@@ -5,7 +5,7 @@
 	"author":"Nenad Golubović <me@nenadg.com>",
 	"description":"Functional Ext.JS testing automation tool using jasmine-node and jsdom",
 	"scripts": {
-		"start": "jasmine-node master.spec.js --captureExceptions --verbose --color --forceexit --junitreport --output reports/"
+		"start": "jasmine-node master.spec.js --nohelpers --captureExceptions --verbose --color --forceexit --junitreport --output reports/"
 	},
 	"dependencies": {
 		"jasmine-node": "1.14.5",

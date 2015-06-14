@@ -26,3 +26,18 @@ node_modules
 
 # Users Environment Variables
 .lock-wscript
+
+# Project-related ignores
+
+# env.json will be created with run.sh
+configuration/env.json
+
+# Sencha workspace non-gpl stuff
+workspace/.sencha
+workspace/build
+workspace/ext
+workspace/packages
+workspace/MyTestApp/.sencha
+
+# .htaccess will be created with run.sh
+workspace/.htaccess

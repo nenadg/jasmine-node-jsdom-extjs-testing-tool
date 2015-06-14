@@ -16,9 +16,12 @@
 
 var DOMParser = require('xmldom').DOMParser,
 	jsdom = require('jsdom'),
-	XMLHttpRequest = require('./XMLHttpRequest'),
+	XMLHttpRequest = require('./src/XMLHttpRequest'),
 	request = require('request'),
-	domLoader = require('./src/domloader.js');
+	domLoader = require('./src/domloader.js'),
+	config = require('./configuration/env.json'),
+	testingUrl = config.testingUrl,
+	testingVariant = config.testingVariant;
 
 // sets jasmine's environment defaults
 jasmine.getEnv().defaultTimeoutInterval = 10000;
@@ -29,7 +32,10 @@ global.jsdom = jsdom;
 global.DOMParser = DOMParser;
 global.XMLHttpRequest = XMLHttpRequest;
 global.request = request;
+global.testingVariant = testingVariant;
+global.testingUrl = testingUrl;
 
+console.log('> Loading ' + testingVariant + ' variant against ' + testingUrl + '\n');
 // Execute dom loader script to get everything in place
 domLoader.load();
 

@@ -3,10 +3,10 @@
  */
 
 exports.load = function(){
-	var loaded = false, src, jsFiles, inlineCode = '';
+	var loaded = false, src, jsFiles =[], inlineCode = '';
 
 	// gets page and parses body for script tags
-	request('http://supertest.ll', function (error, response, body) {
+	request(global.testingUrl, function (error, response, body) {
 		if (!error && response.statusCode == 200) {
 			
 			var scripts = body.match(/<script[\s\S]*?>[\s\S]*?<\/script>/g), i;
@@ -35,7 +35,7 @@ exports.load = function(){
 			// Setup jsdom with hardcore options
 			// Note: html fragment should be basic, and features are mandatory
 			document = global.document = jsdom.jsdom('<html><head></head><body></body></html>', {
-				url: 'http://supertest.ll',
+				url: global.testingUrl,
 				features: {
 					FetchExternalResources   : ["script", "img", "css", "frame", "iframe", "link"],
 					ProcessExternalResources : ["script", "img", "css", "frame", "iframe", "link"],

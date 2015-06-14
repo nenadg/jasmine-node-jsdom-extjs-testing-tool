@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="General test runner" errors="0" tests="3" failures="0" time="6.494" timestamp="2015-06-13T15:29:38">
+  <testcase classname="General test runner" name="Should load Ext.JS" time="2.682"></testcase>
+  <testcase classname="General test runner" name="Should figure out if namespace of my app is available" time="0.001"></testcase>
+  <testcase classname="General test runner" name="Should fireHandler on Button and click `Yes` in generated yes-no dialog" time="3.811"></testcase>
+</testsuite>
+</testsuites>
